@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo "Welcome to the Rubber Duck script!"
+echo "Please tell me your problem."
+
+# Wait for user input
+read problem
+
+echo "Hmm... let me think."
+echo "Have you tried turning it off and on again?"
+
+# Wait for user confirmation
+read -p "Did that solve the problem? (y/n) " solved
+
+# If the user says "no", continue to offer advice
+while [[ "$solved" == "n" ]]
+do
+    echo "Okay, let's try something else."
+    echo "Have you checked the cables?"
+    
+    # Wait for user confirmation
+    read -p "Did that solve the problem? (y/n) " solved
+    
+    # If the user says "no" again, continue with more advice
+    if [[ "$solved" == "n" ]]
+    then
+        echo "Hmm... let me think some more."
+        echo "Have you tried googling the error message?"
+        
+        # Wait for user confirmation
+        read -p "Did that solve the problem? (y/n) " solved
+    fi
+done
+
+echo "Great! I'm glad I could help you with your problem."
+echo "Goodbye!"
