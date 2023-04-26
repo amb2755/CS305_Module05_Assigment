@@ -36,3 +36,6 @@ Make your changes and test them thoroughly.
 Submit a pull request with a clear description of your changes.
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+# New Module Idea
+Error Module: Setting up code as we go through this project to track errors. Adapting as we go through different changes. 
